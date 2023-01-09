@@ -1,8 +1,25 @@
 let bookList;
 function loadBooksList() {
   const displaySection = document.querySelector('.display-book');
+  // while(displaySection.firstChild){
+  //   displaySection.removeChild(displaySection.firstChild);
+  // }
+  bookList.map(book => {
+    const bookDiv = document.createElement('div');
+    bookDiv.classList.add('book-card');
+    bookDiv.innerHTML = `
+      <h2>Book Name: ${book.title}</h2>
+      <h3>Author: ${book.author}</h3>
+    `;
+    displaySection.appendChild(bookDiv);
+
+  })
 }
 
+function removeBook(book) {
+  // TODO
+  console.log("remove book");
+}
 window.onload = function () {
   if (localStorage.getItem('book-list') === null) {
     bookList = [];
