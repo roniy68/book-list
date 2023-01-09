@@ -12,17 +12,32 @@
 
 <body>
     <h1>Awesome Books</h1>
-    <section class="display-book"></section>
+    <section class="books">
+        <table class="books-table">
+            <!-- Table Header -->
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>
+                        <!-- button goes here -->
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="display-book" class="display-book"></tbody>
+        </table>
+    </section>
     <section class="add-book">
         <form id="form-book-submit" action="" method="post">
             <input id="book-title" type="text" required><br>
             <input id="book-author" type="text" required><br>
-            <button id="button-submit" type="submit">Add Book</button>
+            <!-- <button id="button-submit" type="submit">Add Book</button> -->
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block">
         </form>
     </section>
 
     <!-- Script -->
-    <script src="main.js" type="text/javascript"></script>
+    <script src="main.js" type="module"></script>
 </body>
 
 </html>
