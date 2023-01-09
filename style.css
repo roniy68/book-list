@@ -2,3 +2,13 @@
   margin: 0;
   padding: 0;
 }
+body{
+  text-align: center;
+  padding: 80px;
+}
+h1{
+  margin-bottom: 20px;
+}
+input{
+  margin-bottom: 15px;
+}
