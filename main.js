@@ -5,6 +5,11 @@ function removeBook(book) {
   bookList.splice(bookList.indexOf(book), 1);
 }
 
+// update local storage when a book is added,deleted or window unloaded
+function updateLocalStorage() {
+  localStorage.setItem('book-list', JSON.stringify(bookList));
+}
+
 // load booklist in main page 'display-book' section
 function loadBooksList() {
   const displaySection = document.querySelector('.display-book');
@@ -24,6 +29,7 @@ function loadBooksList() {
     removeButton.onclick = () => {
       removeBook(book);
       loadBooksList();
+      updateLocalStorage();
     };
     bookDiv.appendChild(removeButton);
     displaySection.appendChild(bookDiv);
@@ -41,7 +47,7 @@ window.onload = () => {
 };
 
 window.onunload = () => {
-  localStorage.setItem('book-list', JSON.stringify(bookList));
+  updateLocalStorage();
 };
 
 const bookForm = document.getElementById('form-book-submit');
@@ -52,5 +58,6 @@ bookForm.onsubmit = (event) => {
   const book = { title: bookTitle.value, author: bookAuthor.value };
   bookList.push(book);
   loadBooksList();
+  updateLocalStorage();
   bookForm.reset();
 };
