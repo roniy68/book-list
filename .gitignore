@@ -1,0 +1,14 @@
+#ignoring files in node_modules folder if present
+node_modules/
+
+#ignoring html/css linters
+
+.hintrc
+.stylelintrc.json
+
+#ignoring hint report folder produced by hint
+hint-report/
+
+#ignoring esLint linter files
+
+.eslintrc.json
