@@ -18,7 +18,6 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
-  - [Demonstration :](#demonstration-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -78,12 +77,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Demonstration : 
-
-<!-- > Watch this video: 
-- Demonstraion: <br/>
-[![Watch the video](https://media.giphy.com/media/3oz8xNVZFhMdjNnoic/giphy.gif)](https://www.loom.com/share/dca16ee0b02741dd8e9e763f2d3e1c2b)
-GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -157,7 +150,11 @@ To run the project, execute the following command:
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Author**
+👤 **Ram Kumar Karuppusamy**
+
+- GitHub: [ram1117](https://github.com/ram1117)
+
+👤 **Ahmed Hasan Rony**
 
 - GitHub: [@roniy68](https://github.com/roniy68)
 - Twitter: [@ahroniy](https://twitter.com/ahroniy)
@@ -231,6 +228,6 @@ If you like this project...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./readme-assets/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
