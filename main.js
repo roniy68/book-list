@@ -21,7 +21,7 @@ function loadBooksList() {
     const removeButton = document.createElement('button');
     removeButton.classList.add('button-remove');
     removeButton.textContent = 'remove book';
-    removeButton.onclick = function () {
+    removeButton.onclick = () => {
       removeBook(book);
       loadBooksList();
     };
@@ -30,7 +30,7 @@ function loadBooksList() {
   });
 }
 
-window.onload = function () {
+window.onload = () => {
   // initialise booklist for the first time  with null array
   if (localStorage.getItem('book-list') === null) {
     bookList = [];
@@ -40,14 +40,14 @@ window.onload = function () {
   loadBooksList();
 };
 
-window.onunload = function () {
+window.onunload = () => {
   localStorage.setItem('book-list', JSON.stringify(bookList));
 };
 
 const bookForm = document.getElementById('form-book-submit');
 const bookTitle = document.getElementById('book-title');
 const bookAuthor = document.getElementById('book-author');
-bookForm.onsubmit = function (event) {
+bookForm.onsubmit = (event) => {
   event.preventDefault();
   const book = { title: bookTitle.value, author: bookAuthor.value };
   bookList.push(book);
