@@ -41,6 +41,7 @@ class UI {
   // UI : Showing Alert to user
   static showAlert(message, className){
     const div = document.createElement('div');
+    div.setAttribute('id', 'alert')
     div.className = `alert alert-${className}`;
     div.appendChild(document.createTextNode(message));
     const container = document.querySelector('.add-book');
@@ -48,7 +49,7 @@ class UI {
     container.insertBefore(div, form);
 
       // Vanish the div after some time
-    setTimeout(() => document.querySelector('alert').remove(), 3000);
+    setTimeout(() => document.querySelector('#alert').remove(), 3000);
   }
 
   // UI : clearing the form input fields
