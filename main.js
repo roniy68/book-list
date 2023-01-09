@@ -1,4 +1,14 @@
-let bookList;
+// Book Class 
+class Book {
+  constructor(name, author){
+    this.name = name;
+    this.author = author;
+  }
+}
+
+// Books Array
+let bookList = [];
+
 
 // remove book from booklist array
 function removeBook(book) {
