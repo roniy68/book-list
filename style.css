@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 10px;
+}
+
+body {
+  text-align: center;
+  padding: 80px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-bottom: 15px;
+}
