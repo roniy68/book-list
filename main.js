@@ -108,7 +108,7 @@ document.querySelector('#form-book-submit').addEventListener('submit', (e) => {
   
   // Add Simple Validation && Create the Book && Add to UI
   if (name === '' || author === '') {
-    UI.showAlert('Please fill in all fields', 'danger');
+    UI.showAlert('PLEASE FILL IN ALL FIELDS', 'danger');
   }else {
     const book = new Book(name, author);
 
@@ -123,6 +123,6 @@ document.querySelector('#form-book-submit').addEventListener('submit', (e) => {
 // Event : Remove a Book 
 document.querySelector('#display-book').addEventListener('click', (e) => {
   UI.delBook(e.target);
-  Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
+  Store.rmBook(e.target.parentElement.previousElementSibling.previousElementSibling.textContent);
   UI.showAlert('Book Removed', 'success');
 })
