@@ -1,107 +1,67 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+
   <img src="readme-assets/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Book List</b></h3>
 
 </div>
 
 <!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 book-list  ](#-book-list--)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [Demonstration :](#demonstration-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+- [To check for css errors](#to-check-for-css-errors)
+- [To check for html errors](#to-check-for-html-errors)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [Designed by :](#designed-by-)
+  - [Developed By:](#developed-by)
+  - [❓ FAQ ](#-faq-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 book-list  <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> This Project is to create book-list for our Resume
+>       <br><b> Module One day 2 Project [solo]</b>
 
-**[your_project__name]** is a...
+**book-list** is a template to build your book-list website beautiful.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+>HTML and CSS
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://w3school.com/">HTML</a></li>
   </ul>
 </details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
+<br>
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+> THIS IS A SIMPLE TEMPLATE APP FOR NOW
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,93 +69,86 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> Deployed Link Below: 
+>  soon will be available
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://roniy68.github.io/book-list)
+  
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+## Demonstration : 
+
+<!-- > Watch this video: 
+- Demonstraion: <br/>
+[![Watch the video](https://media.giphy.com/media/3oz8xNVZFhMdjNnoic/giphy.gif)](https://www.loom.com/share/dca16ee0b02741dd8e9e763f2d3e1c2b)
+GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+> An Book List website where Engineers from different fields collaborate together. 
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+  - NODE 
+  - ESlint set up
 
 ### Setup
-
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
+- install node and eslint
+ 
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  npm install eslint
+  npx eslint --init
 ```
---->
+<br>
+
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
+Clone this repository to your desired folder:
+
+
+ commands:
 
 ```sh
-  cd my-project
-  gem install
+  git clone https://github.com/roniy68/book-list.git
+  cd hello-world
+  npm install -y
 ```
---->
+<br><br>
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
+
+-install serve with : npm install -g serve
 
 ```sh
-  rails server
+  serve -s .
 ```
---->
 
-### Run tests
 
-To run tests, run the following command:
 
-<!--
-Example command:
+
+# To check for css errors
 
 ```sh
-  bin/rails test test/models/article_test.rb
+    npx stylelint "**/*.{css,scss}"
+
 ```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
+# To check for html errors
 ```sh
-
+    npx hint .
 ```
- -->
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,19 +156,14 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@roniy68](https://github.com/roniy68)
+- Twitter: [@ahroniy](https://twitter.com/ahroniy)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ahroniy)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,11 +171,11 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+>  1 - 3 features I will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **javascript**
+- [ ] **frontend**
+- [ ] **backend**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,7 +193,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+>  I need Support and Guidance to become a Developer.
 
 If you like this project...
 
@@ -255,25 +203,27 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+## Designed by :
+>[Microverse](https://www.microverse.org) <br>
 
-I would like to thank...
+## Developed By: 
+> [`Ahmed Hasan Rony`](https://www.linkedin.com/in/ahroniy)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
 
-  - [Answer_1]
+- **How you clone the repo?**
 
-- **[Question_2]**
+  - git clone **\<repo name\>**
 
-  - [Answer_2]
+- **How you install node?**
+
+  - https://radixweb.com/blog/installing-npm-and-nodejs-on-windows-and-mac
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -282,7 +232,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
