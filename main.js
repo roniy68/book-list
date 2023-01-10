@@ -24,7 +24,7 @@ class BookCollection {
 
 // load booklist in main page 'display-book' section
 function loadBooksList() {
-  const displaySection = document.querySelector('.display-book');
+  const displaySection = document.querySelector('.display-book-container');
   const books = new BookCollection();
   while (displaySection.firstChild) {
     displaySection.removeChild(displaySection.firstChild);
@@ -72,4 +72,29 @@ bookForm.onsubmit = (event) => {
   books.addBook(new Book(bookTitle.value, bookAuthor.value));
   loadBooksList();
   bookForm.reset();
+};
+
+const listbtn = document.getElementById('list-books-link');
+const addBookBtn = document.getElementById('add-books-link');
+const contactBtn = document.getElementById('contact-link');
+
+const displayBk = document.querySelector('.display-book');
+const addBk = document.querySelector('.add-book');
+const contact = document.querySelector('.contact-section');
+listbtn.onclick = function () {
+  displayBk.style.display = 'block';
+  addBk.style.display = 'none';
+  contact.style.display = 'none';
+};
+
+addBookBtn.onclick = function () {
+  displayBk.style.display = 'none';
+  addBk.style.display = 'block';
+  contact.style.display = 'none';
+};
+
+contactBtn.onclick = function () {
+  displayBk.style.display = 'none';
+  addBk.style.display = 'none';
+  contact.style.display = 'block';
 };

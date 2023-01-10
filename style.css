@@ -3,25 +3,34 @@
   padding: 0;
 }
 
-body {
-  padding: 5%;
-  margin: 5% auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: Lato, sans-serif;
+html {
+  background: #fff;
 }
 
-h1 {
-  font-weight: 500;
+body {
+  position: relative;
+  height: 100vh;
+  margin: 0 auto;
+  font-family: Lato, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px white;
+  background-color: rgb(226, 225, 225);
 }
 
 .display-book {
-  height: 30vh;
   width: 100%;
-  margin: 5%;
+}
+
+.display-book-container {
+  height: 40vh;
+  width: 70%;
+  margin: 5% auto;
   overflow: scroll;
-  border: 2px solid black;
+  border: 2px solid #2d2926ff;
+  background: #fff;
 }
 
 .book-card {
@@ -47,7 +56,7 @@ h1 {
 }
 
 .button-remove {
-  border: solid 2px black;
+  border: solid 2px #2d2926ff;
   border-radius: 2px;
   font-size: 1.2em;
   width: 20%;
@@ -60,21 +69,15 @@ h1 {
   background-color: grey;
 }
 
-.hrline {
-  width: 35%;
-  border: solid 1px black;
-  background: black;
-  margin: 10%;
-}
-
 .add-book {
   text-align: center;
   width: 100%;
 }
 
-.add-book > h2 {
+h2 {
   font-size: 2.3em;
   font-weight: 500;
+  text-align: center;
 }
 
 #form-book-submit {
@@ -89,7 +92,7 @@ input {
   width: 90%;
   margin: 2% 0;
   padding: 1% 1%;
-  border: solid 2px black;
+  border: solid 2px #2d2926ff;
 }
 
 #button-submit {
@@ -98,7 +101,7 @@ input {
   align-self: flex-end;
   font-size: 1em;
   background: #fff;
-  border: solid 2px black;
+  border: solid 2px #2d2926ff;
 }
 
 #button-submit:hover {
@@ -107,8 +110,79 @@ input {
   background-color: grey;
 }
 
+.contact-section {
+  width: 70%;
+  text-align: center;
+}
+
+.contact-section > p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 5%;
+}
+
+header {
+  width: 100%;
+}
+
+.navigation-bar {
+  height: 5vh;
+  width: 100%;
+  color: #fff;
+  background-color: #2d2926ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 0;
+  position: absolute;
+  top: 0;
+}
+
+.navigation-logo {
+  font-size: 1.2em;
+  font-weight: 800;
+  padding: 5%;
+}
+
+.navigation-list {
+  width: 40%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation-list-item > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer-address {
+  position: absolute;
+  width: 98%;
+  background: #2d2926ff;
+  color: #fff;
+  bottom: 0;
+  padding: 2% 1%;
+}
+
 @media screen and (min-width: 769px) {
   body {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  body {
     width: 60%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  body {
+    width: 55%;
   }
 }
