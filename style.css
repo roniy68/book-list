@@ -1,17 +1,114 @@
 * {
   margin: 0;
-  padding: 10px;
+  padding: 0;
 }
 
 body {
-  text-align: center;
-  padding: 80px;
+  padding: 5%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Lato, sans-serif;
 }
 
 h1 {
-  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.display-book {
+  height: 30vh;
+  width: 100%;
+  margin: 5%;
+  overflow: scroll;
+  border: 2px solid black;
+}
+
+.book-card {
+  padding: 1% 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-card-grey{
+  background: rgb(230, 227, 227);
+}
+
+.text-content{
+  width: 60%;
+  word-wrap: break-word;
+}
+
+.text-content>h4 {
+  display: inline;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.button-remove {
+  border: solid 2px black;
+  border-radius: 2px;
+  font-size: 1.2em;
+  width: 20%;
+  text-align: center;
+}
+
+.button-remove:hover {
+  cursor: pointer;
+  color: white;
+  background-color: grey;
+}
+
+.hrline {
+  width: 35%;
+  border: solid 1px black;
+  background: black;
+  margin: 10%;
+}
+
+.add-book{
+  text-align: center;
+  width: 100%;
+}
+
+.add-book>h2 {
+  font-size: 2.3em;
+  font-weight: 500;
+}
+
+#form-book-submit{
+  margin: 5% auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
-  margin-bottom: 15px;
+  width: 90%;
+  margin: 2% 0;
+  padding: 1% 1%;
+  border: solid 2px black;
+}
+
+#button-submit{
+  margin: 3%;
+  padding: 1% 5%; 
+  align-self: flex-end;
+  font-size: 1em;
+  background: #fff;
+  border: solid 2px black;
+}
+
+#button-submit:hover{
+  cursor: pointer;
+  color: white;
+  background-color: grey;
+}
+
+@media screen and (min-width:769px) {
+  body {
+    width: 60%;
+  }
 }
