@@ -31,16 +31,16 @@ h1 {
   justify-content: space-between;
 }
 
-.book-card-grey{
+.book-card-grey {
   background: rgb(230, 227, 227);
 }
 
-.text-content{
+.text-content {
   width: 60%;
   word-wrap: break-word;
 }
 
-.text-content>h4 {
+.text-content > h4 {
   display: inline;
   font-size: 1.3em;
   font-weight: 400;
@@ -67,17 +67,17 @@ h1 {
   margin: 10%;
 }
 
-.add-book{
+.add-book {
   text-align: center;
   width: 100%;
 }
 
-.add-book>h2 {
+.add-book > h2 {
   font-size: 2.3em;
   font-weight: 500;
 }
 
-#form-book-submit{
+#form-book-submit {
   margin: 5% auto;
   width: 80%;
   display: flex;
@@ -92,22 +92,22 @@ input {
   border: solid 2px black;
 }
 
-#button-submit{
+#button-submit {
   margin: 3%;
-  padding: 1% 5%; 
+  padding: 1% 5%;
   align-self: flex-end;
   font-size: 1em;
   background: #fff;
   border: solid 2px black;
 }
 
-#button-submit:hover{
+#button-submit:hover {
   cursor: pointer;
   color: white;
   background-color: grey;
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width: 769px) {
   body {
     width: 60%;
   }

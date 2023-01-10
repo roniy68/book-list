@@ -1,14 +1,6 @@
-
-class book {
-  constructor(bktitle, bkauthor) {
-    this.title = bktitle;
-    this.author = bkauthor;
-  }
-}
-
-class bookCollection {
+class BookCollection {
   constructor() {
-    this.books = this.#readLocalStorage();
+    this.books = JSON.parse(localStorage.getItem('book-list'));
   }
 
   getBooks() {
@@ -25,28 +17,24 @@ class bookCollection {
     this.#writeLocalStorage();
   }
 
-  #writeLocalStorage(){
+  #writeLocalStorage() {
     localStorage.setItem('book-list', JSON.stringify(this.books));
-  }
-
-  #readLocalStorage(){
-    return JSON.parse(localStorage.getItem('book-list'));
   }
 }
 
 // load booklist in main page 'display-book' section
 function loadBooksList() {
   const displaySection = document.querySelector('.display-book');
-  let books = new bookCollection();
+  const books = new BookCollection();
   while (displaySection.firstChild) {
     displaySection.removeChild(displaySection.firstChild);
   }
-  let i=1;
+  let i = 1;
   books.getBooks().forEach((book) => {
     const bookDiv = document.createElement('div');
     bookDiv.classList.add('book-card');
-    if(i%2===0){bookDiv.classList.add('book-card-grey');}
-    i+=1;
+    if (i % 2 === 0) { bookDiv.classList.add('book-card-grey'); }
+    i += 1;
     bookDiv.innerHTML = `<div class='text-content'>
       <h4>"${book.title}"</h2>
       <h4>by ${book.author}</h3>
@@ -68,9 +56,9 @@ function loadBooksList() {
 window.onload = () => {
   // initialise booklist for the first time  with null array
   if (localStorage.getItem('book-list') === null) {
-    let books = [];
-    localStorage.setItem('book-list',JSON.stringify(books));
-  } 
+    const books = [];
+    localStorage.setItem('book-list', JSON.stringify(books));
+  }
   loadBooksList();
 };
 
@@ -79,8 +67,9 @@ const bookTitle = document.getElementById('book-title');
 const bookAuthor = document.getElementById('book-author');
 bookForm.onsubmit = (event) => {
   event.preventDefault();
-  let books = new bookCollection();
-  books.addBook(new book(bookTitle.value,bookAuthor.value));
+  const books = new BookCollection();
+  /* eslint-disable no-undef */
+  books.addBook(new Book(bookTitle.value, bookAuthor.value));
   loadBooksList();
   bookForm.reset();
 };
