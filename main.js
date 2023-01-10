@@ -1,53 +1,65 @@
-let bookList;
+class BookCollection {
+  constructor() {
+    this.books = JSON.parse(localStorage.getItem('book-list'));
+  }
 
-// remove book from booklist array
-function removeBook(book) {
-  bookList.splice(bookList.indexOf(book), 1);
-}
+  getBooks() {
+    return this.books;
+  }
 
-// update local storage when a book is added,deleted or window unloaded
-function updateLocalStorage() {
-  localStorage.setItem('book-list', JSON.stringify(bookList));
+  addBook(book) {
+    this.books.push(book);
+    this.#writeLocalStorage();
+  }
+
+  removeBook(book) {
+    this.books.splice(this.books.indexOf(book), 1);
+    this.#writeLocalStorage();
+  }
+
+  #writeLocalStorage() {
+    localStorage.setItem('book-list', JSON.stringify(this.books));
+  }
 }
 
 // load booklist in main page 'display-book' section
 function loadBooksList() {
   const displaySection = document.querySelector('.display-book');
+  const books = new BookCollection();
   while (displaySection.firstChild) {
     displaySection.removeChild(displaySection.firstChild);
   }
-  bookList.forEach((book) => {
+  let i = 1;
+  books.getBooks().forEach((book) => {
     const bookDiv = document.createElement('div');
     bookDiv.classList.add('book-card');
-    bookDiv.innerHTML = `
-      <h4>Book Name: ${book.title}</h2>
-      <h4>Author: ${book.author}</h3>
+    if (i % 2 === 0) { bookDiv.classList.add('book-card-grey'); }
+    i += 1;
+    bookDiv.innerHTML = `<div class='text-content'>
+      <h4>"${book.title}"</h2>
+      <h4>by ${book.author}</h3>
+      </div>
     `;
-    const removeButton = document.createElement('button');
+    const removeButton = document.createElement('div');
     removeButton.classList.add('button-remove');
-    removeButton.textContent = 'remove book';
+    removeButton.textContent = 'Remove';
     removeButton.onclick = () => {
-      removeBook(book);
+      books.removeBook(book);
       loadBooksList();
-      updateLocalStorage();
     };
     bookDiv.appendChild(removeButton);
     displaySection.appendChild(bookDiv);
+    displaySection.appendChild(document.createElement('hr'));
   });
 }
 
 window.onload = () => {
   // initialise booklist for the first time  with null array
   if (localStorage.getItem('book-list') === null) {
-    bookList = [];
-  } else {
-    bookList = JSON.parse(localStorage.getItem('book-list'));
+    const books = [];
+    localStorage.setItem('book-list', JSON.stringify(books));
   }
   loadBooksList();
-};
-
-window.onunload = () => {
-  updateLocalStorage();
 };
 
 const bookForm = document.getElementById('form-book-submit');
@@ -55,9 +67,9 @@ const bookTitle = document.getElementById('book-title');
 const bookAuthor = document.getElementById('book-author');
 bookForm.onsubmit = (event) => {
   event.preventDefault();
-  const book = { title: bookTitle.value, author: bookAuthor.value };
-  bookList.push(book);
+  const books = new BookCollection();
+  /* eslint-disable no-undef */
+  books.addBook(new Book(bookTitle.value, bookAuthor.value));
   loadBooksList();
-  updateLocalStorage();
   bookForm.reset();
 };
