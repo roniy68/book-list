@@ -24,7 +24,7 @@ class BookCollection {
 
 // load booklist in main page 'display-book' section
 function loadBooksList() {
-  const displaySection = document.querySelector('.display-book');
+  const displaySection = document.querySelector('.display-book-container');
   const books = new BookCollection();
   while (displaySection.firstChild) {
     displaySection.removeChild(displaySection.firstChild);

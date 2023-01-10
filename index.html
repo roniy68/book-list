@@ -11,9 +11,20 @@
 </head>
 
 <body>
-    <h1>Awesome Books</h1>
-    <section class="display-book"></section>
-    <div class="hrline"></div>
+    <header>
+        <div class="navigation-bar">
+            <h3 class="navigation-logo">Awesome Books</h3>
+            <ul class="navigation-list">
+                <li class="navigation-list-item" id="list-books-link"><a href="">List</a></li>
+                <li class="navigation-list-item" id="add-books-link"><a href="">Add New</a></li>
+                <li class="navigation-list-item" id="contact-link"><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="display-book">
+        <h2>Awesome Books List</h2>
+        <div class="display-book-container"></div>
+    </section>
     <section class="add-book">
         <h2>Add a new book</h2>
         <form id="form-book-submit" action="" method="post">
@@ -22,6 +33,15 @@
             <button id="button-submit" type="submit">Add Book</button>
         </form>
     </section>
+    <section class="contact-section">
+        <!-- TODO Add contact section for the page-->
+        <h2>Contact</h2>
+        <p>If you like the project please leave a comment at</p>
+    </section>
+    <footer class="footer-address">
+        <h5>Copyright</h5>
+        <p>Contact</p>
+    </footer>
 
     <!-- Script -->
     <script src="Book.js" type="text/javascript"></script>

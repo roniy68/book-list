@@ -4,22 +4,23 @@
 }
 
 body {
-  padding: 5%;
-  margin: 5% auto;
+  padding: 1% 5%;
+  margin: 0 auto;
+  font-family: Lato, sans-serif;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-family: Lato, sans-serif;
 }
 
-h1 {
-  font-weight: 500;
-}
-
-.display-book {
-  height: 30vh;
+.display-book{
   width: 100%;
-  margin: 5%;
+}
+
+.display-book-container {
+  height: 50vh;
+  width: 100%;
+  margin: 5% 0;
   overflow: scroll;
   border: 2px solid black;
 }
@@ -60,21 +61,15 @@ h1 {
   background-color: grey;
 }
 
-.hrline {
-  width: 35%;
-  border: solid 1px black;
-  background: black;
-  margin: 10%;
-}
-
 .add-book {
   text-align: center;
   width: 100%;
 }
 
-.add-book > h2 {
+h2 {
   font-size: 2.3em;
   font-weight: 500;
+  text-align: center;
 }
 
 #form-book-submit {
@@ -105,6 +100,39 @@ input {
   cursor: pointer;
   color: white;
   background-color: grey;
+}
+
+header{
+  width: 100%;
+}
+
+.navigation-bar{
+  height: 5vh;
+  margin: 5% auto;
+  width: 100%;
+  color: #fff;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 1%;
+}
+
+.navigation-logo{
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+.navigation-list{
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation-list-item > a{
+  color: #fff;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 769px) {
