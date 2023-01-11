@@ -20,11 +20,12 @@ body {
   color: #4062a1;
 }
 
-hr{
+hr {
   height: 1px;
   background-color: #5984d3;
   border: none;
 }
+
 .display-book {
   width: 100%;
 }
@@ -34,7 +35,7 @@ hr{
   width: 80%;
   margin: 5% auto;
   overflow: scroll;
-  border: 2px solid #92A8D1;
+  border: 2px solid #92a8d1;
   background: #fff;
 }
 
@@ -54,14 +55,14 @@ hr{
   word-wrap: break-word;
 }
 
-.text-content>h4 {
+.text-content > h4 {
   display: inline;
   font-size: 1.3em;
   font-weight: 400;
 }
 
 .button-remove {
-  border: solid 2px #92A8D1;
+  border: solid 2px #92a8d1;
   background-color: #fff;
   border-radius: 2px;
   font-size: 1em;
@@ -98,7 +99,7 @@ input {
   width: 90%;
   margin: 2% 0;
   padding: 1% 1%;
-  border: solid 2px #92A8D1;
+  border: solid 2px #92a8d1;
 }
 
 #button-submit {
@@ -107,7 +108,7 @@ input {
   align-self: flex-end;
   font-size: 1em;
   background: #fff;
-  border: solid 2px #92A8D1;
+  border: solid 2px #92a8d1;
   color: #4062a1;
 }
 
@@ -122,7 +123,7 @@ input {
   text-align: center;
 }
 
-.contact-section>p {
+.contact-section > p {
   font-size: 1.2em;
   line-height: 1.5em;
   margin: 5%;
@@ -135,7 +136,7 @@ header {
 .navigation-bar {
   height: 5vh;
   width: 100%;
-  background-color: #92A8D1;
+  background-color: #92a8d1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -161,7 +162,7 @@ header {
   margin: 0 5%;
 }
 
-.navigation-list-item>a {
+.navigation-list-item > a {
   color: #fff;
   text-decoration: none;
   font-size: 0.8em;
@@ -175,7 +176,7 @@ header {
 .footer-address {
   position: absolute;
   width: 98%;
-  background: #92A8D1;
+  background: #92a8d1;
   color: #fff;
   bottom: 0;
   padding: 2% 1%;
