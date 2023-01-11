@@ -116,6 +116,7 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 1% 1%;
+  position: fixed;
 }
 
 .navigation-logo{
@@ -128,11 +129,13 @@ header{
   list-style: none;
   display: flex;
   justify-content: space-around;
+  border: 2px solid black;
 }
 
 .navigation-list-item > a{
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 769px) {
